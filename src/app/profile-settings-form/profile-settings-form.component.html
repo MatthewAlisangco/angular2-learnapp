@@ -1,0 +1,13 @@
+<h1>formcontrol</h1>
+
+
+<form novalidate [formGroup]="settingsForm"  (ngSubmit) ="addPost(settingsForm.value)">
+
+  <input formControlName="title" placeholder="title">
+  <input formControlName="description" placeholder="description">
+
+
+<button>Submit</button>
+</form>
+
+<p>Value: {{settingsForm.value | json}} </p>

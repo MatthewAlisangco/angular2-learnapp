@@ -1,0 +1,33 @@
+
+
+<div class="content-card">
+  <ul class="movies">
+
+    <li *ngFor="let movie of movies">
+      {{movie.id}} , {{movie.title}} , {{movie.category}}
+
+  </ul>
+
+</div>
+
+
+
+
+
+
+<main class="mdl-layout__content">
+  <div class="mdl-grid">
+
+    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" *ngFor="let movie of movies">
+      <div class="mdl-card__media"><img src="http://static.rogerebert.com/uploads/movie/movie_poster/forrest-gump-1994/large_pEYI2QILJWMN1ZeEMgMM0jxBVhK.jpg" width="173" height="157" border="0"
+                                        alt="" style="padding:10px;">
+      </div>
+      <div class="mdl-card__title">
+        Title: {{movie.title}}
+      </div>
+      <div class="mdl-card__supporting-text">
+        Category: {{movie.category}}
+      </div>
+    </div>
+  </div>
+</main>
